@@ -1,0 +1,33 @@
+@import "style/variables.scss";
+
+.toast_mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: transparent;
+  z-index: 1999;
+}
+
+.toast_message {
+  display: inline-block;
+  max-width: 80%;
+  min-width: rem(250);
+  line-height: 1.5;
+  padding: rem(20);
+  box-sizing: border-box;
+  text-align: center;
+  word-break: break-all;
+  font-size: rem(36);
+  color: #fff;
+  background-color: rgba(58, 58, 58, 0.9);
+  border-radius: 3px;
+  /* opacity: 0; */
+}

@@ -1,0 +1,17 @@
+@import "style/variables.scss";
+
+.button {
+  display: inline-block;
+  padding: 0.4rem 0;
+  width: 22%;
+  line-height: rem(48);
+  font-size: rem(30);
+  box-sizing: border-box;
+  border: 2px solid #009ef7;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button + .button {
+  margin-left: rem(20);
+}
