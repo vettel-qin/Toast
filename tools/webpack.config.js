@@ -1,6 +1,5 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
-const MiniCssExtractPlguin = require('mini-css-extract-plugin');
 const cleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
@@ -44,7 +43,7 @@ module.exports = {
         test: /\.(css|sass|scss)$/,
         rules: [
           {
-            loader: MiniCssExtractPlguin.loader
+            loader: "style-loader"
           },
 
           {
@@ -79,10 +78,6 @@ module.exports = {
 
   plugins: [
     new cleanWebpackPlugin(),
-    new MiniCssExtractPlguin({
-      filename: "[name].[contenthash:8].css",
-      chunkFilename: "[name].[contenthash:8].css"
-    }),
   ],
 
   externals: [nodeExternals()]

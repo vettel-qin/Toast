@@ -1,6 +1,6 @@
 {
   "name": "@vettel/toast",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "homepage": "https://vettel-qin.github.io/vettel-toast",
   "description": "react toast component",
   "main": "lib/bundle.js",
